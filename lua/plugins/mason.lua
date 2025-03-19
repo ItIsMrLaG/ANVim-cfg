@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -32,6 +30,8 @@ return {
     opts = {
       ensure_installed = {
         "python",
+        "c",
+        "go",
         -- add more arguments for adding more debuggers
       },
     },
