@@ -6,10 +6,28 @@
 ---@type LazySpec
 return {
   "AstroNvim/astroui",
+  -- {
+  --   "whatyouhide/vim-gotham",
+  --   lazy = false,
+  --   priority = 1000,
+  --   -- config = function() vim.cmd.colorscheme "gotham" end,
+  -- },
+  -- {
+  --   "shmerl/neogotham",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require("neogotham"):setup { oldgotham = true }
+  --     -- vim.cmd.colorscheme "neogotham"
+  --   end,
+  -- },
+  -- {
+  --   vim.cmd.colorscheme "catppuccin",
+  -- },
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "astrodark",
+    colorscheme = "catppuccin",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
@@ -34,4 +52,17 @@ return {
       LSPLoading10 = "⠏",
     },
   },
+  -- {
+  --   "whatyouhide/vim-gotham",
+  --   lazy = false,
+  --   -- config = function() vim.cmd.colorscheme "gotham" end,
+  -- },
+  -- {
+  --   "shmerl/neogotham",
+  --   lazy = false,
+  --   config = function()
+  --     require("neogotham"):setup { oldgotham = true }
+  --     -- vim.cmd.colorscheme "neogotham"
+  --   end,
+  -- },
 }
