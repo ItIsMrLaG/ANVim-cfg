@@ -48,6 +48,9 @@ return {
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
+        -- New mapping for Telescope (structures)
+        ["<Leader>fs"] = { "<cmd>Telescope lsp_document_symbols<CR>", desc = "Find functions in file" },
+
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()
