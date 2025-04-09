@@ -1,0 +1,28 @@
+From 67a005674672d51f2a3bcfa8acecd6f824401b76 Mon Sep 17 00:00:00 2001
+From: kogora <it.is.mr.lag@gmail.com>
+Date: Tue, 8 Apr 2025 17:56:19 +0300
+Subject: [PATCH] add coq plugin
+
+---
+ lua/plugins/qoc.lua | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 lua/plugins/qoc.lua
+
+diff --git a/lua/plugins/qoc.lua b/lua/plugins/qoc.lua
+new file mode 100644
+index 0000000..cc2ab8c
+--- /dev/null
++++ b/lua/plugins/qoc.lua
+@@ -0,0 +1,9 @@
++return {
++  {
++    -- NOTE: opam install coq (don't forget it!!!)
++    "whonore/Coqtail",
++    init = function()
++      vim.g.coqtail_map_prefix = "<leader>k"
++    end,
++  },
++}
+-- 
+2.49.0
+
